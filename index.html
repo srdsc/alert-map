@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerts AutoRefresh</title>
-    <!-- Перезагрузка страницы целиком каждые 300 секунд (5 минут). 
-         Если хотите изменить время, поменяйте число 300 на другое (в секундах) -->
-    <meta http-equiv="refresh" content="3600">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Мапа тривог</title>
+    <!-- Автообновление страницы каждые 300 секунд (5 минут) -->
+    <meta http-equiv="refresh" content="300">
     <style>
         html, body {
             margin: 0;
@@ -14,16 +13,17 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #111;
+            background-color: #202124;
         }
         iframe {
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             border: none;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://alerts.in.ua"></iframe>
+    <iframe src="https://alerts.in.ua" allowfullscreen="true"></iframe>
 </body>
 </html>
