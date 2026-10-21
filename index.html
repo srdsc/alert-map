@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Мапа тривог</title>
-    <!-- Автообновление страницы каждые 300 секунд (5 минут) -->
-    <meta http-equiv="refresh" content="300">
+    <title>Мапа тривог (Полноэкранный режим)</title>
+    <meta http-equiv="refresh" content="3600">
     <style>
         html, body {
             margin: 0;
@@ -24,6 +23,12 @@
     </style>
 </head>
 <body>
-    <iframe src="https://alerts.in.ua" allowfullscreen="true"></iframe>
+    <iframe id="mapFrame" src="https://alerts.in.ua" allowfullscreen="true"></iframe>
+
+    <script>
+        try {
+            window.localStorage.setItem('minimalisticMode', 'true');
+        } catch(e) {}
+    </script>
 </body>
 </html>
