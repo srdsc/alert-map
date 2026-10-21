@@ -1,4 +1,4 @@
-# Alerts Map AutoRefresh 
+# Alert Map AutoRefresh 
 
 Простая обертка (wrapper) на базе HTML `iframe` и мета-тега `http-equiv="refresh"`, созданная для стабильного отображения интерактивной карты (https://alerts.in.ua) на телевизорах с LG webOS.
 
